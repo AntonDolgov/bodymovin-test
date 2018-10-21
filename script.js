@@ -1,9 +1,11 @@
 /* Shapes */
 
 var svgContainer = document.getElementById('svgContainer');
-var animItem = bodymovin.loadAnimation({
+var pathPrefix = document.documentElement.getAttribute('data-path') || '';
+
+bodymovin.loadAnimation({
     wrapper: svgContainer,
-    animType: 'svg',
+    animType: svgContainer.getAttribute('data-type') || 'svg',
     loop: true,
-    path: 'data.json'
+    path: pathPrefix + 'data.json'
 });
