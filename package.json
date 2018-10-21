@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "bodymovin": "^4.13.0"
+  }
+}
